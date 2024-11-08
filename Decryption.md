@@ -6,7 +6,7 @@ This document guides you through the process of decrypting a message file encryp
 
 If OpenSSL is not already installed on your system, use the following commands:
 
-### For Ubuntu/Debian
+### For Ubuntu
 ```bash
 sudo apt update
 sudo apt install openssl
