@@ -55,4 +55,4 @@ cat decrypted_message.txt
 - **High Security:** AES is highly secure, with resistance to known attacks, making it suitable for protecting sensitive data.
 - **Efficient Performance:** It’s fast and efficient, ideal for encrypting large amounts of data.
 - **Flexible Key Lengths:** AES supports 128-, 192-, and 256-bit keys, allowing different security levels as needed.
-- **Widely Trusted:** Adopted by the U.S. government
+- **Widely Trusted:** Adopted by the U.S. government.
