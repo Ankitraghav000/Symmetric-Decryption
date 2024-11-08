@@ -23,12 +23,12 @@ The command below will decrypt encrypted_message.enc using the symmetric_key.key
 openssl enc -aes-256-cbc -d -in encrypted_message.enc -out decrypted_message.txt -pass file:./symmetric_key.key
 ```
 ### Explanation of the Command:
-**openssl enc:** Runs the OpenSSL encryption/decryption command.
-**-aes-256-cbc:** Specifies the encryption algorithm used, AES with a 256-bit key in CBC (Cipher Block Chaining) mode.
-**-d:** Tells OpenSSL to decrypt the file.
-**-in encrypted_message.enc:** Specifies the encrypted file to decrypt.
-**-out decrypted_message.txt:** Specifies the name of the output file for the decrypted message.
-**-pass file:./symmetric_key.key:** Provides the path to the symmetric key file. This file is used as a "password" to unlock the encryption.
+- **openssl enc:** Runs the OpenSSL encryption/decryption command.
+- **-aes-256-cbc:** Specifies the encryption algorithm used, AES with a 256-bit key in CBC (Cipher Block Chaining) mode.
+- **-d:** Tells OpenSSL to decrypt the file.
+- **-in encrypted_message.enc:** Specifies the encrypted file to decrypt.
+- **-out decrypted_message.txt:** Specifies the name of the output file for the decrypted message.
+- **-pass file:./symmetric_key.key:** Provides the path to the symmetric key file. This file is used as a "password" to unlock the encryption.
 ### Step 3: View the Decrypted Message
 Once the decryption process is complete, you’ll see a new file named decrypted_message.txt in your current directory. Open this file to view the original message.
 ```
