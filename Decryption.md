@@ -14,8 +14,24 @@ sudo apt install openssl
 ### Files Provided
 In the shared folder, you will find the following files:
 
-**symmetric_key.key** - This file contains the symmetric key used for encryption.
-**encrypted_message.enc** - This is the encrypted file containing the message.
+- **symmetric_key.key** - This file contains the symmetric key used for encryption.
+- **encrypted_message.enc** - This is the encrypted file containing the message.
+  
+  ### Now add both files to a directory and navigate into it, you can use the following steps:
+
+#### Create the Directory
+```
+mkdir directory-name
+```
+#### Move Both Files into the Directory
+```
+mv encrypted_message.enc  symmetric_key.key directory-name/
+```
+#### Navigate Inside the Directory:
+```
+cd directory-name
+```
+After running these commands, you’ll be inside the directory with both files added to it.
 ## Decryption
 The command below will decrypt encrypted_message.enc using the symmetric_key.key file.
 
@@ -34,3 +50,9 @@ Once the decryption process is complete, you’ll see a new file named decrypted
 ```
 cat decrypted_message.txt
 ```
+## Reasons to Choose AES(Advanced Encryption Standard):
+
+- **High Security:** AES is highly secure, with resistance to known attacks, making it suitable for protecting sensitive data.
+- **Efficient Performance:** It’s fast and efficient, ideal for encrypting large amounts of data.
+- **Flexible Key Lengths:** AES supports 128-, 192-, and 256-bit keys, allowing different security levels as needed.
+- **Widely Trusted:** Adopted by the U.S. government
